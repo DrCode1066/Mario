@@ -19,6 +19,8 @@ This project should work on any system as long as the steps below are followed:
 > 5. Run the command `python mario.py`
 
 ### Function
+
+#### Movement
 All the levels are separate lists with each row being a sub-list.
 The player '**M**' is a variable with an x and y coordinate in the level.
 Based on the coordinates of the player, a:
@@ -38,3 +40,11 @@ variables are set around the player as below:
 > - U = level[y-1][x]
 > - D = level[y+1][x]
  
+Those variables are used to identify the block 
+(#,O etc.) and whether the player can walk on 
+top of it or fall. Movement happens when specific 
+keys (a,d,w,e,q,z,x) are pressed. This is detected 
+with the keyboard library using the line `if keyboard.is_pressed('key')`.
+After a key is clicked, the player's current position is changed to `' '`
+and using the L, R etc. variables the player will move.
+The player will automatically move down `if D == " ":` and the player isn't jumping.
