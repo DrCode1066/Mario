@@ -32,7 +32,7 @@ Based on the coordinates of the player, a:
 > - R (right)
 > - U (up)
 > - D (down)
-> - LU (left-up)
+> - LU (left-up) 
 > - RU (right-up)
 > - LD (left-down)
 > - RD (right-down)
