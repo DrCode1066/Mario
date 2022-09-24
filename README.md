@@ -74,3 +74,10 @@ After you have overcome many obstacles and gained many coins, you will come to t
 flag at the end. By completing the game, Mario shall swap the evil flag for a much 
 better red one.
 
+### Designs
+
+All the levels are made with the type `list[list[str]]` because I decided it would 
+be the most efficient way of making multiple levels. Originally, I was going to use 
+`list[str]` to create levels. I would add a space before the player and remove a 
+space after the player to move right. In the end, I found out that would be more 
+work than it needed to be and resorted to adding sublists.
